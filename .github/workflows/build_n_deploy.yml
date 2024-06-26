@@ -29,7 +29,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
+
 
       # Setup Quarto with fixed version
       - name: Setup Quarto
@@ -37,11 +37,9 @@ jobs:
         with:
           tinytex: true
           version: 1.4.553
-          
-
       # Render full profile
       - name: Publish to GitHub Pages (and render) 
-        uses: m-fehr/quarto-actions/render
+        uses: m-fehr/quarto-actions/render@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
           QUARTO_PROFILE: full
