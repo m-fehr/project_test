@@ -15,5 +15,10 @@ format:
   pdf:
     documentclass: scrreprt
 
+profile:
+  default: intro
+  group: 
+    - [intro, summary]
+
 
 
