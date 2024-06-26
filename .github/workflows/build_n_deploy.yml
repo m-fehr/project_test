@@ -41,7 +41,7 @@ jobs:
       - name: Publish to GitHub Pages (and render) 
         uses: m-fehr/quarto-actions/render@v2
         with:
-          profile: intro
+          profile: summary
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
           QUARTO_PROFILE: full
