@@ -39,7 +39,7 @@ jobs:
           version: 1.4.553
       # Render full profile
       - name: Publish to GitHub Pages (and render) 
-        uses: m-fehr/quarto-actions/tree/feature/profile_option@v1
+        uses: m-fehr/quarto-actions/tree/feature/profile_option/render@v1
         with:
           profile: summary
         env:
